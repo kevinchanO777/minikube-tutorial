@@ -1,20 +1,20 @@
 # Using Minikube to depoly a Kubernetes cluster locally running MacOS silicon
 
-Referencing:
+## Referencing:
 
 - https://minikube.sigs.k8s.io/docs/start/
 - https://kubernetes.io/docs/tasks/tools/install-kubectl-macos/
 - https://kubernetes.io/docs/tutorials/kubernetes-basics/deploy-app/deploy-intro/
 
 
-Install the following to begin:
+## Install the following to begin:
 
 - Minikube
     - `brew install minikube`
 
 - kubectl (using brew)
     - `brew install kubectl`
-# Enable shell autocompletion by adding `source <(kubectl completion zsh)` to `~./zshrc`
+###### Enable shell autocompletion by adding `source <(kubectl completion zsh)` to `~./zshrc`
 
 - kubectl (Manually)
     - curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/darwin/arm64/kubectl"
