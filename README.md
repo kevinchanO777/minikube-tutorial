@@ -25,3 +25,22 @@
      kubectl version --client --output=yaml
      rm kubectl kubectl.sha256
     ```
+
+
+## The only Minikube commands we need:
+
+#### Start a cluster
+- `minikube start`
+
+#### Status of cluster
+- `minikube status`
+
+#### Delete the cluster
+- `minikube delete --all`
+
+
+
+## Useful kubectl commands:
+
+#### 
+

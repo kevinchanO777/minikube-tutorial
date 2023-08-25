@@ -1,0 +1,32 @@
+# Create K8s deployment and service (usually group together in 1 single file)
+
+# replicas: scaling your pods
+# DO NOT use deployment to scale DB. Use statefulSet instead
+
+# template: configuration for the pod
+# containers: the list of containers (usually 1 container per pod)
+# containerPort: !!! Check the default port provided in the image
+# labels: additional identifier e.g. "release" : "stable", "env" : "dev"
+# labels: are a required fields for pods, and it's a good practice to use label elsewhere
+ 
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mongo-deployment
+  labels:
+    app: mongodb
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: mongodb
+  template:           
+    metadata:
+      labels:
+        app: mongodb
+    spec:
+      containers:
+      - name: mongodb
+        image: mongo:7.0.1-rc0
+        ports:
+        - containerPort: 27017
