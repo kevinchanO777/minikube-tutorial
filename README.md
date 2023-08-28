@@ -1,11 +1,5 @@
 # Using Minikube to depoly a Kubernetes cluster locally running MacOS silicon
 
-## Referencing:
-
-- https://minikube.sigs.k8s.io/docs/start/
-- https://kubernetes.io/docs/tasks/tools/install-kubectl-macos/
-- https://kubernetes.io/docs/tutorials/kubernetes-basics/deploy-app/deploy-intro/
-
 
 ## Install the following to begin:
 
@@ -26,6 +20,9 @@
      rm kubectl kubectl.sha256
     ```
 
+## To start the cluster and the app
+
+
 
 ## The only Minikube commands we need:
 
@@ -42,5 +39,20 @@
 
 ## Useful kubectl commands:
 
-#### 
+#### Retrieve all the resources (pods, services, deployments ...) in K8s cluster
+- `kubectl get all`
+
+#### Applying a config/depolyment/service file 
+- `kubectl apply -f <file.yaml>`
+
+#### Instpecting individual resouces or errors:
+- `kubectl describe pod podname`
+
+
+## Referencing:
+
+- https://www.youtube.com/watch?v=s_o8dwzRlu4&t=151s&ab_channel=TechWorldwithNana
+- https://minikube.sigs.k8s.io/docs/start/
+- https://kubernetes.io/docs/tasks/tools/install-kubectl-macos/
+- https://kubernetes.io/docs/tutorials/kubernetes-basics/deploy-app/deploy-intro/
 
