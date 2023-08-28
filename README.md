@@ -22,6 +22,13 @@
 
 ## To start the cluster and the app
 
+- ```
+    minikube start
+    minikube service webapp-service
+```
+###### ⚠ Known issue - Minikube IP not accessible using ```minikube ip```
+###### If you can't access the NodePort service webapp with MinikubeIP:NodePort, execute the following command:
+``` minikube service webapp-service ```
 
 
 ## The only Minikube commands we need:
@@ -32,9 +39,11 @@
 #### Status of cluster
 - ```minikube status```
 
+#### Dashboard
+- ```minikube dashboard```
+
 #### Delete the cluster
 - ```minikube delete --all```
-
 
 
 ## Useful kubectl commands:
@@ -53,6 +62,7 @@
 
 ## Referencing:
 
+- https://gitlab.com/nanuchi/k8s-in-1-hour/-/blob/master/README.md?ref_type=heads
 - https://www.youtube.com/watch?v=s_o8dwzRlu4&t=151s&ab_channel=TechWorldwithNana
 - https://minikube.sigs.k8s.io/docs/start/
 - https://kubernetes.io/docs/tasks/tools/install-kubectl-macos/
