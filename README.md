@@ -27,26 +27,28 @@
 ## The only Minikube commands we need:
 
 #### Start a cluster
-- `minikube start`
+- ```minikube start```
 
 #### Status of cluster
-- `minikube status`
+- ```minikube status```
 
 #### Delete the cluster
-- `minikube delete --all`
+- ```minikube delete --all```
 
 
 
 ## Useful kubectl commands:
 
 #### Retrieve all the resources (pods, services, deployments ...) in K8s cluster
-- `kubectl get all`
+- ```kubectl get all```
+- ```kubectl get configmap```
+- ```kubectl get secret```
 
 #### Applying a config/depolyment/service file 
-- `kubectl apply -f <file.yaml>`
+- ```kubectl apply -f <file.yaml>```
 
 #### Instpecting individual resouces or errors:
-- `kubectl describe pod podname`
+- ```kubectl describe pod podname```
 
 
 ## Referencing:
