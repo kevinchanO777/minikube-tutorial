@@ -21,14 +21,15 @@
     ```
 
 ## To start the cluster and the app
-
-- ```
-    minikube start
-    minikube service webapp-service
+```
+minikube start
+minikube service webapp-service
 ```
 ###### ⚠ Known issue - Minikube IP not accessible using ```minikube ip```
 ###### If you can't access the NodePort service webapp with MinikubeIP:NodePort, execute the following command:
 ``` minikube service webapp-service ```
+
+The application is supposed to be listened at minikubeip:nodePort
 
 
 ## The only Minikube commands we need:
